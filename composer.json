@@ -1,0 +1,15 @@
+{
+  "name": "notkev1n/php-mvc",
+  "autoload": {
+    "psr-4": {
+      "app\\": "./"
+    }
+  },
+  "authors": [
+    {
+      "name": "kevin700brands",
+      "email": "kevin@700brands.com"
+    }
+  ],
+  "require": {}
+}
