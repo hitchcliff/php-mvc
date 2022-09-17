@@ -4,7 +4,11 @@ namespace app\core;
 
 class SiteController{
   public function home() {
-    return Application::$app->router->renderView('home');
+    $params = [
+      "name" => "Kevin"
+    ];
+
+    return Application::$app->router->renderView('home', $params);
   }
 
   public function contact() {
