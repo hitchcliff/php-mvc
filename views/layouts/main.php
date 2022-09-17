@@ -12,8 +12,8 @@
 	<nav>
 		<ul>
 			<li>
-				<a href="/home.php">Home</a>
-				<a href="/contact.php">Contact</a>
+				<a href="/">Home</a>
+				<a href="/contact">Contact</a>
 			</li>
 		</ul>
 	</nav>
