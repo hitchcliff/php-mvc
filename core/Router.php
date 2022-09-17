@@ -23,7 +23,7 @@ class Router {
 
     if($callback === false) {
       $this->response->setStatusCode(404);
-      return $this->renderContent("Not Found");
+      return $this->renderView("_404");
     }
 
     if(is_string($callback)) {
@@ -33,12 +33,6 @@ class Router {
     return call_user_func($callback);
   }
 
-  public function renderContent($view) {
-    ob_start();
-    $layoutContent = $this->layoutContent();
-    return str_replace("{{content}}", $view, $layoutContent);
-    ob_get_clean();
-  }
 
   public function renderView($view) {
     $layoutContent = $this->layoutContent();

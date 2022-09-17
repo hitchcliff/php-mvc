@@ -9,7 +9,14 @@
 </head>
 
 <body>
-	<nav>Navbar</nav>
+	<nav>
+		<ul>
+			<li>
+				<a href="/home.php">Home</a>
+				<a href="/contact.php">Contact</a>
+			</li>
+		</ul>
+	</nav>
 
 	{{content}}
 
