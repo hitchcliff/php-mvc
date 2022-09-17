@@ -2,7 +2,6 @@
 
 
 namespace app\core;
-// namespace app\core\Request;
 
 class SiteController extends Controller
 {

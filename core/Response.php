@@ -2,9 +2,11 @@
 
 namespace app\core;
 
-class Response {
+class Response
+{
 
-  public function setStatusCode(int $status) {
+  public function setStatusCode(int $status)
+  {
     http_response_code($status);
   }
 }

@@ -2,9 +2,11 @@
 
 namespace app\core;
 
-class Controller {
+class Controller
+{
 
-  public function render($view, $params = []) {
+  public function render($view, $params = [])
+  {
     return Application::$app->router->renderView($view, $params);
   }
 }
