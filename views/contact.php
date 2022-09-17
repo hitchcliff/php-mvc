@@ -2,7 +2,7 @@
 <form method="POST">
 	<div>
 		<label>Subject</label>
-		<input name="email" type="email" placeholder="Enter email">
+		<input name="subject" type="text" placeholder="Enter email">
 	</div>
 	<div>
 		<label>Email</label>

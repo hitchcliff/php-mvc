@@ -1,9 +1,13 @@
-<?php 
+<?php
+
 
 namespace app\core;
+// namespace app\core\Request;
 
-class SiteController extends Controller{
-  public function home() {
+class SiteController extends Controller
+{
+  public function home()
+  {
     $params = [
       "name" => "Kevin"
     ];
@@ -11,11 +15,19 @@ class SiteController extends Controller{
     return $this->render('home', $params);
   }
 
-  public function contact() {
-    return $this->render('contact', []);
+  public function contact()
+  {
+    return $this->render('contact');
   }
 
-  public function handleContact() {
+  public function handleContact(Request $request)
+  {
+    $body = $request->getBody();
+
+    echo '<pre>';
+    var_dump($body);
+    echo '</pre>';
+
     return "Handle submitted data";
   }
 }
