@@ -32,14 +32,5 @@ class SiteController extends Controller
     return "Handle submitted data";
   }
 
-  public function login()
-  {
-    return $this->render('login');
-  }
-
-  public function register()
-  {
-    return $this->render('register');
-  }
 
 }
