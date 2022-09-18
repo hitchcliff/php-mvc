@@ -1,7 +1,9 @@
 <?php
 
+namespace app\controllers;
+use app\core\Controller;
+use app\core\Request;
 
-namespace app\core;
 
 class SiteController extends Controller
 {
@@ -29,4 +31,5 @@ class SiteController extends Controller
 
     return "Handle submitted data";
   }
+
 }
